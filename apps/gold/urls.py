@@ -17,5 +17,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^', views.index, name='gold_index'),
+    url(r'^$', views.index, name='gold_index'),
+    url(r'^process_money', views.process_money, name='gold_process_money'),
 ]
